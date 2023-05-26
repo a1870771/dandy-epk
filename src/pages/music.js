@@ -8,7 +8,7 @@ export default function Home() {
     <Head>
       <title>music | The Dandy Buzzkills</title>
     </Head>
-    <div className='relative lg:top-32 top-8 m-auto lg:flex w-4/5 lg:w-max font-[kaisei]'>
+    <div className='relative lg:top-32 lg:left-[4.5px] top-8 m-auto lg:flex w-4/5 lg:w-max font-[kaisei]'>
       <Sidebar />
       <div className='relative top-0 left-0 flex flex-col  gap-y-2'>
         <h1 className='hidden lg:flex text-3xl'>Music</h1>
@@ -54,4 +54,6 @@ export default function Home() {
     </div>
   </>
   )
+
+  //make it a polaroid
 }
