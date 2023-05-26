@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "kaisei";
+  src: url('../../public/fonts/kaisei-tokumin-latin-700-normal.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "kaisei";
+  src: url('../../public/fonts/kaisei-tokumin-bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+::selection {
+  background-color: #df513e;
+  color: #fefefe;
+}
+
+html {
+  min-width: 360px;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -11,8 +34,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 17, 16, 16;
+    --background-end-rgb: 17, 16, 16;
   }
 }
 
