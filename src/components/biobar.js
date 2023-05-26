@@ -41,7 +41,7 @@ export default function Biobar() {
                     key={path}
                     href={path}
                     className={clsx(
-                      'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
+                      'transition-all hover:text-neutral-200 flex align-middle',
                       {
                         'text-neutral-500': !isActive,
                         'font-bold': isActive,
@@ -52,7 +52,7 @@ export default function Biobar() {
                       {name}
                       {path === pathname ? (
                         <motion.div
-                          className="absolute inset-0 bg-neutral-100 dark:bg-neutral-800 rounded-md z-[-1]"
+                          className="absolute inset-0 bg-neutral-800 rounded-md z-[-1]"
                           layoutId="biobar"
                           transition={{
                             type: 'spring',
